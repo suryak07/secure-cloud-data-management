@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="/static/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<div class="navbar">
+
+  <div class="brand">
+     🔐 SecureCloud
+  </div>
+
+  <div class="menu">
+     <a href="/">🏠 Home</a>
+     <a href="/dashboard">📊 Dashboard</a>
+     <a href="/upload">⬆ Upload</a>
+     <a href="/profile">👤 Profile</a>
+     <a href="/logout">🚪 Logout</a>
+  </div>
+
+</div>
+
+
+<div class="container">
+
+<h2>Admin Panel</h2>
+<form method="get" action="/admin">
+<input type="text" name="search" placeholder="Search by username">
+<button type="submit">Search</button>
+</form>
+
+<br>
+
+
+<h3>Encrypted Records</h3>
+
+{% for row in data %}
+<div class="data-box">
+<b>{{ row[1] }}</b> <br>
+{{ row[2] }}
+</div>
+{% endfor %}
+
+</div>

@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="/static/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+<div class="container">
+
+<h2>Create Account</h2>
+
+<form method="post">
+<input type="text" name="username" placeholder="Username">
+<input type="password" name="password" id="password" placeholder="Password" onkeyup="checkStrength()">
+
+<p id="strength"></p>
+
+<button type="submit">Register</button>
+</form>
+
+<a href="/login">Already have an account? Login</a>
+
+</div>
+
+<script>
+function checkStrength(){
+    var p = document.getElementById("password").value;
+    var strength = document.getElementById("strength");
+
+    if(p.length < 6){
+        strength.innerHTML = "Weak Password";
+        strength.style.color = "red";
+    }
+    else if(p.length < 10){
+        strength.innerHTML = "Medium Password";
+        strength.style.color = "orange";
+    }
+    else{
+        strength.innerHTML = "Strong Password";
+        strength.style.color = "green";
+    }
+}
+</script>

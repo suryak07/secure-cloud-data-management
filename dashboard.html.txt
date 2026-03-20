@@ -1,0 +1,10 @@
+<h2>User Dashboard</h2>
+
+<a href="/upload">Upload Data</a> |
+<a href="/logout">Logout</a>
+
+<h3>Your Decrypted Data</h3>
+
+{% for d in data %}
+<p>{{d}}</p>
+{% endfor %}

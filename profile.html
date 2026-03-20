@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="/static/style.css">
+
+<div class="navbar">
+
+  <div class="brand">
+     🔐 SecureCloud
+  </div>
+
+  <div class="menu">
+     <a href="/">🏠 Home</a>
+     <a href="/dashboard">📊 Dashboard</a>
+     <a href="/upload">⬆ Upload</a>
+     <a href="/profile">👤 Profile</a>
+     <a href="/logout">🚪 Logout</a>
+  </div>
+
+</div>
+
+<div class="profile-wrapper">
+  <div class="profile-card">
+
+    <div class="avatar">👤</div>
+    
+    <h2>{{ user }}</h2>
+
+    <p class="email-text">Secure Cloud User</p>
+
+    <div class="stats">
+      <div class="stat-box">
+        <h3>{{ count }}</h3>
+        <p>Uploads</p>
+      </div>
+    </div>
+
+    <a href="/dashboard" class="back-btn">← Back to Dashboard</a>
+
+  </div>
+
+</div>

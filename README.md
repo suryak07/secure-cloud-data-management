@@ -1,2 +1,12 @@
-# secure-cloud-data-management
-A secure cloud-based system for storing and managing sensitive data using encryption and user authentication to ensure data privacy and protection.
+# Secure Cloud Data Management System
+
+This project is designed to securely store and manage data using encryption.
+
+## Features
+- Data encryption
+- User authentication
+- Secure storage
+
+## Technologies
+- Python
+- SQL
